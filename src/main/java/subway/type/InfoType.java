@@ -4,9 +4,17 @@ public enum InfoType {
 
     INFO("[INFO]"),
 
-    STATION_REGISTER_INFO(INFO.getText() + " 지하철 역이 등록되었습니다.\n\n"),
+    DOUBLE_ENTER("\n\n"),
 
-    STATION_DELETE_INFO(INFO.getText() + " 지하철 역이 삭제되었습니다.\n\n");
+    STATION_REGISTER_INFO(INFO.getText() + " 지하철 역이 등록되었습니다." + DOUBLE_ENTER.getText()),
+
+    STATION_DELETE_INFO(INFO.getText() + " 지하철 역이 삭제되었습니다" + DOUBLE_ENTER.getText()),
+
+    LINE_REGISTER_INFO(INFO.getText() + " 지하철 노선이 등록되었습니다." + DOUBLE_ENTER.getText()),
+
+    LINE_DELETE_INFO(INFO.getText() + " 지하철 노선이 삭제되었습니다." + DOUBLE_ENTER.getText())
+
+    ;
 
     private final String text;
 

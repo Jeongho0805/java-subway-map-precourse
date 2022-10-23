@@ -21,4 +21,12 @@ public class StationRepository {
     public static boolean deleteStation(String name) {
         return stations.removeIf(station -> Objects.equals(station.getName(), name));
     }
+
+    public static List<String> findAllStationName() {
+        List<String> allStationName = new ArrayList<>();
+        for (Station station : stations) {
+            allStationName.add(station.getName());
+        }
+        return allStationName;
+    }
 }

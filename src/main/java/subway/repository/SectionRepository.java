@@ -27,6 +27,17 @@ public class SectionRepository {
         return allStationList;
     }
 
+    public static void deleteByLineName(String lineNameInput) {
+        for (Section section : sections) {
+            Line line = section.getLine();
+            String lineName = line.getName();
+            if(lineName.equals(lineNameInput)) {
+                sections.remove(section);
+                break;
+            }
+        }
+    }
+
 //    public static boolean deleteLineByName(String name) {
 //        return lines.removeIf(line -> Objects.equals(line.getName(), name));
 //    }
