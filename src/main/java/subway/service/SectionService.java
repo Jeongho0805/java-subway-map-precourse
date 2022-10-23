@@ -35,7 +35,7 @@ public class SectionService {
         }
         Section section = SectionRepository.findSectionByLineName(lineName);
         LinkedList<Station> stationList = section.getStationList();
-        stationList.add(Integer.parseInt(order), new Station(stationName));
+        stationList.add(Integer.parseInt(order) - 1, new Station(stationName));
         InfoOutPut.printSectionRegisterInfo();
         return true;
     }
