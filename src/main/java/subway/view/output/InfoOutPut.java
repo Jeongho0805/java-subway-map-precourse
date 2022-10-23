@@ -21,5 +21,11 @@ public class InfoOutPut {
         System.out.print(InfoType.LINE_DELETE_INFO.getText());
     }
 
+    public static void printSectionRegisterInfo() {
+        System.out.print(InfoType.SECTION_REGISTER_INFO.getText());
+    }
 
+    public static void printSectionDeleteInfo() {
+        System.out.print(InfoType.SECTION_DELETE_INFO.getText());
+    }
 }

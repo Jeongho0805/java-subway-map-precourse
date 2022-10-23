@@ -46,4 +46,24 @@ public class ErrorOutput {
     public static void printLineDeleteError() {
         System.out.print(ErrorType.LINE_DELETE_ERROR.getText());
     }
+
+    public static void printSectionLineError() {
+        System.out.print(ErrorType.SECTION_NOEXIST_LINE_ERROR.getText());
+    }
+
+    public static void printSectionStationError() {
+        System.out.print(ErrorType.SECTION_ADD_STATION_ERROR.getText());
+    }
+
+    public static void printSectionAlreadyRegisterError() {
+        System.out.print(ErrorType.SECTION_ALREADY_REGISTER_ERROR.getText());
+    }
+
+    public static void printSectionBoundaryError() {
+        System.out.print(ErrorType.SECTION_BOUNDARY_ERROR.getText());
+    }
+
+    public static void printSectionDeleteStationError() {
+        System.out.print(ErrorType.SECTION_DELETE_STATION_ERROR.getText());
+    }
 }

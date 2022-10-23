@@ -37,7 +37,7 @@ public class MainController {
             SectionController.run(scanner);
         }
         if (input.equals(InputType.FOUR.getText())) {
-            TotalPrintController.run(scanner);
+            TotalPrintController.run();
         }
     }
 }

@@ -26,9 +26,20 @@ public enum ErrorType {
 
     LINE_STATION_ERROR(ERROR.getText() + " 상행 종점역과 하행 종점역은 등록 된 역이어야 합니다." + DOUBLE_ENTER.getText()),
 
-    LINE_DELETE_ERROR(ERROR.getText() + " 삭제하려는 노선은 등록되어 있는 노선이어야 합니다." + DOUBLE_ENTER.getText())
+    LINE_DELETE_ERROR(ERROR.getText() + " 삭제하려는 노선은 등록되어 있는 노선이어야 합니다." + DOUBLE_ENTER.getText()),
 
-    ;
+    SECTION_NOEXIST_LINE_ERROR(ERROR.getText() + " 동록되어 있지 않은 노선입니다.." + DOUBLE_ENTER.getText()),
+
+    SECTION_ADD_STATION_ERROR(ERROR.getText() + " 등록되어 있지 않은 역의 구간 등록은 불가합니다." + DOUBLE_ENTER.getText()),
+
+    SECTION_ALREADY_REGISTER_ERROR(ERROR.getText() + " 노선에 이미 등록된 역이므로 중복 등록이 불가합니다.." + DOUBLE_ENTER.getText()),
+
+    SECTION_BOUNDARY_ERROR(ERROR.getText() + " 순서는 노선에 등록 된 역의 갯수 +1 까지 가능합니다." + DOUBLE_ENTER.getText()),
+
+    SECTION_DELETE_STATION_ERROR(ERROR.getText() + " 노선에 등록되어있지 않은 역이므로 삭제가 불가합니다." + DOUBLE_ENTER.getText());
+
+
+
 
 
 
